@@ -457,6 +457,74 @@ footer .logo-studio {
   border-radius: 50%;
 }
 
+/* -------------- subscription----------- */
+
+.subscription {
+  width: 453px;
+  height: 80px;
+
+  margin-left: 80px;
+}
+
+.subscription-form {
+  display: flex;
+  flex-direction: column;
+
+  gap: 16px;
+}
+
+.subscription-div {
+  display: flex;
+}
+
+.subscription-email {
+  width: 264px;
+  height: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: #2e2f42;
+  padding-left: 16px;
+}
+
+.subscription-title {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+.subscription-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 24px;
+  background-color: #4d5ae5;
+  border-radius: 4px;
+  border: none;
+  margin-left: 24px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color var(--hover-time);
+}
+
+.subscription-icon {
+  fill: #ffffff;
+  margin-left: 16px;
+}
+
+.subscription-btn:hover,
+.subscription-btn:focus {
+  background-color: var(--nav-hover);
+}
+
 /* PORTFOLIO */
 
 /* section 1 */
@@ -625,11 +693,14 @@ h2 {
   cursor: pointer;
 }
 
-.svg-close {
-}
-
 .is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  padding: 72px 24px;
 }
