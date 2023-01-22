@@ -459,16 +459,13 @@ footer .logo-studio {
 
 /* -------------- subscription----------- */
 
-.subscription {
+.subscription-form {
+  display: flex;
+  flex-direction: column;
   width: 453px;
   height: 80px;
 
   margin-left: 80px;
-}
-
-.subscription-form {
-  display: flex;
-  flex-direction: column;
 
   gap: 16px;
 }
@@ -691,6 +688,12 @@ h2 {
   justify-content: center;
 
   cursor: pointer;
+  transition: background-color var(--hover-time), fill var(--hover-time);
+}
+
+.modal-close:hover {
+  background-color: var(--nav-hover);
+  fill: #ffffff;
 }
 
 .is-hidden {
@@ -708,7 +711,6 @@ h2 {
 .modal-div {
   display: flex;
   flex-direction: column;
-  gap: 8px;
   margin-bottom: 16px;
 }
 
@@ -721,25 +723,27 @@ h2 {
   left: 16px;
   top: 50%;
   transform: translateY(-50%);
-  transition: fill var(--hover-time );
+  transition: fill var(--hover-time);
 }
 
 .modal-div label {
   color: #8e8f99;
+  margin-top: 8px;
+  margin-bottom: 4px;
 }
 
 .input {
   width: 100%;
+  height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding-left: 38px;
-  transition:  border var(--hover-time);
+  transition: border var(--hover-time);
   outline: none;
 }
 
 .input:focus {
-   border: 1px solid #4d5ae5;
- 
+  border: 1px solid #4d5ae5;
 }
 .input:focus + .modal-icon {
   fill: #4d5ae5;
@@ -747,11 +751,12 @@ h2 {
 
 .modal-form p {
   font-weight: 500;
-  padding-bottom: 16px;
   text-align: center;
+  margin-bottom: 8px;
 }
 
 .modal-form textarea {
+  height: 120px;
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -777,7 +782,6 @@ h2 {
 
 .check {
   display: flex;
-  gap: 8px;
   margin-bottom: 24px;
 }
 
